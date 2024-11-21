@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="src/css/main.css">
+
+</head>
+<body>
+    <div class="coverBody"></div>
+    <!-- <div class="navbar"></div> -->
+    <div class="header">
+        <div class="bg"></div>
+        <div class="logoBG"></div>
+        <img src="src/img/WINSlogo.png" alt="wins_logo" class="logo fake">
+        <img src="src/img/WINSlogo.png" alt="wins_logo" class="logo">
+    </div>
+    <br><br><br>
+    <div class="main-info">
+        <div class="subtitle">Nuestros Productos</div>
+        <br><br><br>
+        <div class="cardRow">
+            <div class="cardNR" id="cardNR-e0001">
+                <img src="src/img/waffle.png" class="image">
+                <div class="info">
+                    <div class="name">Waffle de Kiwicha</div>
+                    <div class="price valid">S./5.00</div>
+                </div>
+            </div>
+            <div class="cardNR">
+                <img src="src/img/waffle.png" class="image">
+                <div class="info">
+                    <div class="name">Waffle de Soya</div>
+                    <div class="price valid">S./5.00</div>
+                </div>
+            </div>
+            <div class="cardNR">
+                <img src="src/img/mintlemonade.png" class="image">
+                <div class="info">
+                    <div class="name">Limonada de Hierba buena</div>
+                    <div class="price valid">S./2.00</div>
+                </div>
+            </div>
+            <div class="cardNR">
+                <img src="src/img/aguaymanto.png" class="image">
+                <div class="info">
+                    <div class="name">Mermelada de Aguaymanto</div>
+                    <div class="price invalid">No a la venta</div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="title">¿Quiénes Somos?</div>
+        <br><br><br>
+        <div class="card">
+            <span class="lore">Somos una empresa dedicada a la creación y comercialización de waffles innovadores, elaborados con ingredientes naturales y nutritivos, específicamente harinas andinas como la harina de kiwicha y la harina de soya</span>
+        </div>
+        <br><br>
+        <div class="title">¿Qué Ofrecemos?</div>
+        <br><br><br>
+        <div class="card">
+            <span class="lore">Nuestra propuesta es ofrecer una alternativa saludable, deliciosa y sostenible en el mercado de los waffles, utilizando productos autóctonos de la región andina para promover tanto el bienestar de nuestros consumidores como el respeto por la biodiversidad</span>
+        </div>
+        <br><br><br>
+        <div class="title">Redes Sociales</div>
+        <br><br><br><br>
+        <div class="social">
+            <a target="_blank" href="https://www.instagram.com/wins.oficiall/"><img src="src/img/instagram_logo.png" alt="ins_logo" class="logo"></a>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="footer">
+        <div class="copyright">© 2024 WINS</div>
+    </div>
+    <script src="src/js/mobileCheck.js"></script>
+    <script>
+        if(!window.mobileCheck()) {
+            document.body.innerHTML = "";
+            document.body.style.height = "100vh"
+            const dNB = document.createElement("div")
+            dNB.style.position = "fixed";
+            dNB.style.width = "100vw";
+            dNB.style.height = "100vh";
+            const tND = document.createElement("span")
+            tND.style.fontFamily = "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+            tND.style.color = "rgb(140, 63, 77)"
+            tND.style.fontWeight = "bolder"
+            tND.style.position = "relative";
+            tND.style.top = "50%"
+            tND.style.left = "50%"
+            tND.style.float = "left";
+            tND.style.textAlign = "center"
+            tND.style.width = "80%"
+            tND.style.transform = "translate(-50%, -50%)"
+            tND.style.fontSize = "50px"
+            tND.innerText = "Lo sentimos! Esta pagina fué hecha para móviles y su desarrollo para computadoras está aún en progreso :)"
+            dNB.append(tND)
+            document.body.append(dNB)
+        }
+    </script>
+    <script src="src/js/modalModule.js"></script>
+</body>
+</html>
